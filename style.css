@@ -1,0 +1,139 @@
+body{
+   max-width: 1062px;
+   width: 100%;
+   margin: auto;
+   background: url("fon.jpg") no-repeat center;
+height: 100%;
+color: rgba(161, 83, 10, 1);
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15x;
+    margin-bottom: 50px;
+    
+}
+
+.menu-list{
+   display: flex;
+   list-style-type: none;
+      }
+
+   .menu-item:not(:last-child) {
+    margin-right: 70px;
+    }
+
+    .menu-item a {
+        text-decoration: none;
+        color: rgb(8, 7, 6);
+    }
+
+    .active {
+        font-weight: bold;
+    }
+
+    .main-text {
+        font-weight: 700;
+        font-size: 53px;
+        line-height: 50px;
+    }
+
+    .quote {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        margin-left: 0;
+        opacity: 0.7;
+    }
+
+    .bitton-order{
+        all:unset;
+        padding: 22px 55px;
+        background: rgb(3, 2, 1);
+        border-radius: 5px;
+        color: rgb(10, 8, 5);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+
+    }
+
+    .main {
+        background-color: #d4c4ff;
+    width: 100vw;
+    color: #fff;
+   }
+   @keyframes myAnim {
+    from {
+      margin-left: 700;
+    }
+    to {
+      margin-left: 500px;
+    }
+   }
+   
+   .main-text {  
+      animation: myAnim 20s linear alternate infinite;
+    }
+    #callback {
+        width: 300px;
+        height: 150px;
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+        bottom: 30px;
+    }
+    #callback p {
+        color: #070502;
+        padding: 22px;
+       }
+       #callback:after {
+        content: 'Обратная связь';
+        background-color: pink;
+       }
+       
+       #callback:after {
+        content: 'Обратная связь';
+        background-color: pink;
+        text-align: center;
+        border-radius: 0 0 8px 8px;
+        padding: 5px 0;
+        width: 150px; 
+        position: absolute; 
+        left: 300px; 
+       }
+       #callback:after {
+        content: 'Обратная связь';
+        background-color: pink;
+        text-align: center;
+        border-radius: 0 0 8px 8px;
+        padding: 5px 0;
+        width: 150px;
+        position: absolute; 
+        left: 300px; 
+        transform: rotate(-90deg); 
+       }
+       #callback:after {
+        content: 'Обратная связь';
+        background-color: rgb(224, 134, 149);
+        text-align: center;
+        border-radius: 0 0 8px 8px;
+        padding: 5px 0;
+        width: 150px; 
+        position: absolute; 
+        left: 300px; 
+        transform: rotate(-90deg);
+        transform-origin: 0 0;
+       }
+       #callback {
+        width: 300px;
+        height: 150px;
+        background-color: rgb(14, 7, 7);
+        position: absolute;
+        bottom: 30px;
+        transform: translateX(-100%);
+       }
+       #callback:hover {
+        transform: translateX(0%);
+        transition: all 0.7s ease;
+       }
